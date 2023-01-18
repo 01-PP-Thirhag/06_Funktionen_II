@@ -14,6 +14,16 @@
 
 
 
+// module:  addition a + b | test:
+output(add(2,3));
+output(add(2,-9));
+output(add(-1,-3));
+
+function add(a,b) {
+	let c = a + b;
+	return c; 
+	
+}
 // module:  output | test:
 // output("hello");
 // output(2);
