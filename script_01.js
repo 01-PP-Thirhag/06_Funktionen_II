@@ -32,20 +32,18 @@ function getNumber2() {
 output(getOp());
 function getOp() {
 
-   
+	let op = prompt("Operator eingeben:");
+	
+	if (op == "+" || op == "-" || op == "*" || op == "/" || op == ":") {
 
-    let op= prompt("Operator eingeben:")
+		return op;
+	
+	} else {
+	
+		return ERROR_STR_GEN;
+	
+	}
 
-
-
-if (op == "+" || op == "-" || op == "*" || op == "/" || op == ":") {
-
-    return op;
-
-} else {
-
-    return ERROR_STR_GEN;
-}
 }
 
 // module: calculator | tests:
