@@ -17,7 +17,6 @@ const ERROR_STR_GEN = "Irgendetwas ging schief!"
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-
 output(calculator(3,2,"+"));
 output(calculator(3,2,"-"));
 output(calculator(3,2,"*"));
