@@ -12,7 +12,7 @@
 */
 
 // Konstanten
-const ERROR_STR_DIV = " teilen durch 0 nicht möglich" 
+const ERROR_STR_DIV = "Division durch 0 nicht möglich" 
 
 // modul division a / b  | test:
 output(divide(10,2));
