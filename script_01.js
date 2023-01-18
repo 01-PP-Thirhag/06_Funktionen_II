@@ -11,17 +11,21 @@
 4. Ausgabe in Konsole : check!
 */
 
+// Konstanten
+const ERROR_STR_DIV = " teilen durch 0 nicht möglich" 
+
 // modul division a / b  | test:
 output(divide(10,2));
 output(divide(20,10));
 output(divide(100,0));
-function divide(a,b){
+function divide(a,b) {
 
-if (b==0) {
-return" teilen durch 0 nicht möglich" 
-} else {
-return a/b
-}}
+	if (b==0) {
+		return ERROR_STR_DIV;
+	} else {
+		return a/b
+	}
+}
 
 
 // module: multiply a * b |  test:
