@@ -29,7 +29,7 @@ function getNumber2() {
 }
 
 // module: operator input| Test:
-output(getOp());
+// output(getOp());
 function getOp() {
 
 	let op = prompt("Operator eingeben:");
@@ -45,9 +45,14 @@ function getOp() {
 	}
 
 }
-function isOpValid(op); {
-	return op == "+" || op == "-" || op == "*" || op == "/" || op == ":"
+
+// module: operator valide?| Test:
+output(isOpValid("+"));
+output(isOpValid("#?!"));
+function isOpValid(op) {
+	return op == "+" || op == "-" || op == "*" || op == "/" || op == ":";
 }
+
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
 // output(calculator(3,2,"+"));
