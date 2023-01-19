@@ -34,7 +34,7 @@ function getOp() {
 
 	let op = prompt("Operator eingeben:");
 	
-	if (op == "+" || op == "-" || op == "*" || op == "/" || op == ":") {
+	if (isOpValid(op)) {
 
 		return op;
 	
@@ -45,7 +45,9 @@ function getOp() {
 	}
 
 }
-
+function isOpValid(op); {
+	return op == "+" || op == "-" || op == "*" || op == "/" || op == ":"
+}
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
 // output(calculator(3,2,"+"));
