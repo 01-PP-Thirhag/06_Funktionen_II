@@ -11,6 +11,13 @@
 4. Ausgabe in Konsole : check!
 */
 
+/**
+ *  Vollständige Lösung in 
+ * https://github.com/01-PP-CC/06a_Funktionen_III
+ * 
+ */
+
+
 // Konstanten
 const ERROR_STR_DIV = "Division durch 0 nicht möglich!";
 const ERROR_STR_GEN = "Irgendetwas ging schief!"
@@ -33,15 +40,10 @@ function getNumber2() {
 function getOp() {
 
 	let op = prompt("Operator eingeben:");
-	
 	if (isOpValid(op)) {
-
 		return op;
-	
 	} else {
-	
 		return ERROR_STR_GEN;
-	
 	}
 
 }
